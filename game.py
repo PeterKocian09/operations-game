@@ -18,4 +18,4 @@ for x in range(1,11):
 t1 = time.time()
 tem = t1 - t
 
-print("risposte esatte: {0} in {1:.2f}".format(re, tem))
+print("correct answers: {0} with {1:.2f} time".format(re, tem))
