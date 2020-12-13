@@ -9,7 +9,11 @@ for x in range(1,11):
   a = random.randint(1, 10)
   b = random.randint(1, 10)
   s = random.choice(["+","-","*"])
-  r = int(input("{0}) {1} {2} {3} = \n".format(x, a, s, b)))
+  try:
+    r = int(input("{0}) {1} {2} {3} = \n".format(x, a, s, b)))
+  except:
+    r = None
+    print("Invalid input")
   c = eval("a{0}b".format(s))
   if r == c:
     re += 1
